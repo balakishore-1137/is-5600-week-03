@@ -62,6 +62,7 @@ function respondSSE (req, res) {
     res.on('close', () => {
       chatEmitter.off('message', onMessage);
     });
+    
 }
 
 
